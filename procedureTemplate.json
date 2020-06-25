@@ -1,0 +1,21 @@
+{
+    "procedureName":"Rausgehen",
+    "triggerParameters":[
+        {
+            "DAYS":"EVERYDAY",
+            "TIME":"0700"
+        }
+    ],
+    "steps":[
+        {
+            "step":1,
+            "instructionText":"Bitte schließen Sie die Fenster in ihrem Raum.",
+            "helpText":"Sie haben vielleicht offne Fenster. Schließen Sie die Fenster, indem sie den Griff tätigen, während Sie das Fenster zur Wand drücken, beziehungsweise Schieben.",
+            "confirmText":"Haben Sie alle offenen Fenster geschlossen?"
+        },
+        {
+           "step":2,
+           "finishedText":"Herzlichen Glückwunsch! Sie sind bereit rauszugehen. Ich wünsche Ihnen viel Spaß."
+        }
+    ]
+}

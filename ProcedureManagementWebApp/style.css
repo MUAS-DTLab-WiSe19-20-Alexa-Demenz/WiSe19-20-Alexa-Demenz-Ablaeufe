@@ -1,0 +1,388 @@
+
+@font-face {
+  font-family: 'AmazonEmberLight';
+  src: url("https://a0.awsstatic.com/main/fonts/amazon-ember/AmazonEmber_Lt.woff2") format("woff2"), url("https://a0.awsstatic.com/main/fonts/amazon-ember/AmazonEmber_Lt.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AmazonEmber';
+  src: url("https://a0.awsstatic.com/main/fonts/amazon-ember/AmazonEmber_Rg.woff2") format("woff2"), url("https://a0.awsstatic.com/main/fonts/amazon-ember/AmazonEmber_Rg.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AmazonEmberBold';
+  src: url("https://a0.awsstatic.com/main/fonts/amazon-ember/AmazonEmber_Bd.woff2") format("woff2"), url("https://a0.awsstatic.com/main/fonts/amazon-ember/AmazonEmber_Bd.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: black;
+  font-family: "AmazonEmber", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+body > .container {
+  min-height: 290px;
+}
+
+/* ----------------------------------------------- */
+header {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  min-height: 100px;
+}
+
+header img {
+  max-width: 400px;
+  max-height: 200px;
+  margin-bottom: 10px;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 20px 0 20px;
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header nav a {
+  color: #999;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+header .current a {
+  color: #000;
+}
+
+header li a:hover {
+  color: #eeba27;
+  transition: 0.3s ease;
+}
+
+/* ------------------------------------------------- */
+
+#LoginWithAmazon img {
+  display: block;
+  margin: 100px auto 0 auto;
+}
+
+body h3, h4, h5 {
+  margin: 0;
+}
+
+body h1, h3 {
+  font-family: "AmazonEmberBold", sans-serif;
+}
+
+body h3 {
+  font-size: 20px;
+}
+
+body h4 {
+  margin-top: 25px;
+  font-size: 18px;
+  font-family: "AmazonEmberBold", sans-serif;
+}
+
+body h5 {
+  font-size: 16px;
+}
+
+body strong {
+  padding-left: 20px;
+}
+
+caption {
+  text-align: left;
+  font-size: 20px;
+  font-family: "AmazonEmberBold", sans-serif;
+}
+
+thead {
+  font-weight: bold;
+  text-align: left;
+}
+
+#procedure_list_table {
+  float: left;
+  width: 55%;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #eee;
+}
+
+#procedure_list_table td {
+  padding: 0 10px 0 10px;
+}
+
+#procedure_list_table tbody tr {
+  height: 35px;
+  border-bottom: 2px solid #eee;
+}
+
+#procedure_list_table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#procedure_list_table .name {
+  width: 50%;
+}
+
+#heading_row td {
+  padding: 0;
+  vertical-align: bottom;
+  font-weight: bold;
+}
+
+#log_table tr {
+  height: 30px;
+}
+
+#log_table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+#log_table a {
+  cursor: pointer;
+  color: #888;
+}
+
+#log_table a:hover {
+  color: #000;
+}
+
+#log_table {
+  float: right;
+  width: 40%;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #eee;
+}
+
+#editor {
+  float: left;
+  width: 85%;
+}
+
+#editor_templates {
+  float: right;
+  width: 15%;
+}
+
+#editor_templates li {
+  color: #444;
+}
+
+#editor_templates li:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+#procedure_form textarea {
+  font-size: 1em;
+  font-family: "AmazonEmber", Arial, sans-serif;
+  width: 98.5%;
+  height: 2.6em;
+  border: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #aaa;
+  resize: none;
+}
+
+#procedure_form input {
+  font-size: 1em;
+  font-family: "AmazonEmber", Arial, sans-serif;
+  width: 150px;
+  height: 20px;
+  border: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #aaa;
+}
+
+#procedure_form select {
+  width: 154px;
+}
+
+/* ----- editor tables ------ */
+.desc {
+  width: 180px;
+}
+
+.txt {
+  width: 150px;
+}
+
+.spacer_row {
+  height: 35px;
+}
+
+.spacer_row button {
+  margin-left: 10px;
+}
+
+#steps_table {
+  margin-bottom: 40px;
+}
+
+#steps_table .txt {
+  width: 400px;
+}
+
+/* -------------------------- */
+
+button {
+  text-decoration: none !important;
+  padding: 2.66667px 10px;
+  margin: 0;
+  font-size: 1em;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid;
+  border-color: #be952c #a68226 #9b7924;
+  max-width: 100%;
+  color: #333 !important;
+  background: #eeba37;
+  outline: 0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 inset;
+  background-image: url('data:imagesvg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y3ZjhmYSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U3ZTllYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fee6b0), color-stop(100%, #eeba37));
+  background-image: -moz-linear-gradient(#fee6b0 0%, #eeba37 100%);
+  background-image: -webkit-linear-gradient(#fee6b0 0%, #eeba37 100%);
+  background-image: linear-gradient(#fee6b0 0%, #eeba37 100%)
+}
+
+button:hover {
+  border-color: #a98527 #917221 #86691f;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U3ZWFmMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q5ZGNlMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fede97), color-stop(100%, #ecb21f));
+  background-image: -moz-linear-gradient(#fede97 0%, #ecb21f 100%);
+  background-image: -webkit-linear-gradient(#fede97 0%, #ecb21f 100%);
+  background-image: linear-gradient(#fede97 0%, #ecb21f 100%);
+  background-color: #eeba37;
+}
+
+button:active {
+  border-color: #9b7924 #a68226 #a68226;
+  background-color: #eeba37;
+  background-image: none;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px inset;
+}
+
+#save_button {
+  width: 100px;
+  height: 40px;
+}
+
+.help_btn {
+  background-color: #ddd !important;
+  padding: 0;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: none;
+  box-shadow: none;
+}
+
+.delete_btn {
+  background-color: #ff3030 !important;
+  background-image: none;
+  border-color: #a00000;
+}
+
+.delete_btn:hover {
+  background-color: #f00000 !important;
+  background-image: none;
+  border-color: #a00000;
+}
+
+.show_btn {
+  color: #888 !important;
+  font-size: 22px;
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  margin-top: -3px;
+}
+
+.show_btn:hover {
+  color: #000 !important;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+}
+
+.show_btn:active {
+  box-shadow: none;
+}
+
+/* --------------------------------------------------------------- */
+
+footer {
+  text-align: center;
+  padding: 50px 0 20px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+footer img {
+  width: 120px;
+  max-height: 90px;
+}
+
+#hm_logo img {
+  width: 180px;
+  margin-bottom: -10px;
+  margin-right: 10px;
+}
+
+#sce_logo img {
+  width: 140px;
+  margin-left: 22px;
+  margin-bottom: 6px;
+}

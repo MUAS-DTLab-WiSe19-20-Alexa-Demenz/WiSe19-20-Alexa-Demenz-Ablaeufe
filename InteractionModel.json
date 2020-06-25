@@ -1,0 +1,213 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "ablauf hilfe",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetAllProceduresIntent",
+                    "slots": [],
+                    "samples": [
+                        "Was gibt es so an Abläufen",
+                        "Zeige mir alle verfügbaren Abläufe.",
+                        "Zeige mir alle Abläufe.",
+                        "Was kann ich an Abläufen machen",
+                        "Welche Abläufe gibt es",
+                        "Kann ich was machen"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "StartProcedureIntent",
+                    "slots": [
+                        {
+                            "name": "procedure",
+                            "type": "Procedure"
+                        }
+                    ],
+                    "samples": [
+                        "Ich mag {procedure}",
+                        "Ich würde gerne {procedure}",
+                        "Ich will {procedure}",
+                        "Ich möchte {procedure}",
+                        "Starte {procedure}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NudelnIntent",
+                    "samples": ["Nudeln"]
+                },
+                {
+                    "name": "FinishedIntent",
+                    "samples": [
+                        "Ist fertig.",
+                        "Fertig",
+                        "Erledigt.",
+                        "Ist erledigt.",
+                        "Habe es erledigt.",
+                        "Habs erledigt.",
+                        "Weiter gehts.",
+                        "Weiter",
+                        "Ich bin fertig.",
+                        "Fertig."
+                    ]
+                }
+
+
+
+            ],
+            "types": [
+                {
+                    "name": "Procedure",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "mich bettfertig machen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bett machen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kochen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nudeln kochen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "frühstück machen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rausgehen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "einkaufen gehen"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "StartProcedureIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.580101388009"
+                    },
+                    "slots": [
+                        {
+                            "name": "procedure",
+                            "type": "Procedure",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Confirm.Intent.580101388009",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sind Sie bereit für diesen Ablauf?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Sind Sie bereit?"
+                    }
+                ]
+            }
+        ]
+    }
+}
